@@ -1,0 +1,23 @@
+/* .contact-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.contact-link {
+    border-radius: 17px;
+    display: inline-flex;
+    background: var(--colors-screamin-green, #5bff79);
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #132833;
+    padding: 10px 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-link:hover {
+    color: #e05cd1;
+}

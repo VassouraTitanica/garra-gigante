@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    color: rgb(244, 244, 237);
+    overflow-x: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    background-color: #201332;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #A947FF;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #c78cfb;
+}
+
+.header {
+    /* adjusts the image to fill in the space */
+    height: 100vh;
+    /* width: auto; */
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Create a pseudo-element for the background image */
+.header::before {
+    /* this is the bg image */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/main.jpg');
+    opacity: 0.25;
+    background-size: cover;
+    background-position: center;
+    /* Place it behind the content */
+    z-index: -1;
+}
+
+.header h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-subInfo {
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    width: 97%;
+    display: flex;
+    /* to be on complete separate sides */
+    justify-content: space-between;
+    /* align elements in the same row */
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+.brand {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #c78cfb;
+}
+
+.subBrand {
+    color: #c78cfb;
+}
+
+.main-content {
+    /* width: 95%; */
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: auto;
+}
+
+.about {
+    /* padding: 1rem; */
+    /* margin: 0 15%; */
+    /* margin-bottom: 5rem; */
+    min-height: 40rem;
+    padding: 3rem;
+    /* border-radius: 550px; */
+}
+
+.about p {
+    margin-bottom: 2.5rem;
+    /* max-width: 60%; */
+}
+
+.media {
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #2d0d35;
+    position: relative;
+    /* justify-content: center; */
+}
+
+.media-images {
+    margin-top: 2.5rem;
+    /* children in a row */
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* space between items */
+    gap: 40px;
+    /* justify-content: space-between; */
+    /* vertical alignment */
+    align-items: center;
+    /* horizontal scroll if the content overflows */
+    overflow: auto;
+    /* width: 90%; */
+}
+
+.media-images img {
+    /* border: 30px solid #3e234e; */
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.source {
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    /* float: right; */
+}
+
+.garra {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding: 3rem;
+}
+
+.garra p {
+    margin-bottom: 2.5rem;
+}
+
+.case {
+    margin: 0 auto;
+    /* max-width: 60%; */
+    padding: 3rem;
+    background-color: #2d0d35;
+}
+
+
+.customers {
+    padding: 3rem;
+}
+
+.customer-block {
+    /* width: 50%; */
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer {
+    width: calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.garrinhas {
+    /* margin: 0 auto; */
+    margin-bottom: 2.55rem;
+    padding: 3rem;
+}
+
+.contact {
+    background-color: #2d0d35;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.contact-nav {
+    display: flex;
+    flex-direction: row;
+    /* move each side to the opposite */
+    justify-content: space-between;
+}
+
+.contact-link {
+    margin-top: 2.5rem;
+}
+
+.logos {
+    width: 50%;
+    /* float: right; */
+}
+
+.logos img {
+    max-width: 140px;
+    height: auto;
+    margin-left: 10px;
+}
+
+@media (max-width: 1008px) {
+    html {
+        font-size: 0.750rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        /* Adjust h1 font size */
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        /* Adjust h2 font size */
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        /* Adjust h3 font size */
+    }
+
+    .header-subInfo {
+        font-size: 1.35rem;
+    }
+
+    .brand {
+        font-size: 2rem;
+    }
+
+    /* .media-images {
+        gap: 25px;
+    } */
+
+    .media-images {
+        justify-content: left;
+    }
+
+    .media-images img {
+        width: 180px;
+    }
+
+    .garrinhas {
+        margin: 0 auto;
+    }
+
+    .garrinhas img {
+        width: 400px;
+    }
+
+    .contact-nav {
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+
+    .logos {
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+}
+
+/* @media (max-width: 700px) {
+    .cinematography-images {
+        display: block;
+    }
+
+    .cinematography-images img {
+        width: 250px;
+        margin-bottom: 1.5rem;
+    }
+} */
+
+@media (max-width: 446px) {
+    .garrinhas img {
+        width: 300px;
+    }
+}
+
+/* NO LONGER USED */
+.services {
+    /* padding: 1rem; */
+    margin: 0 auto;
+    /* max-width: 60%; */
+    margin-bottom: 5rem;
+    padding: 3rem;
+    /* background-color: #302544; */
+    /* border-radius: 50px; */
+}
+
+.services p {
+    margin-bottom: 2.5rem;
+}
+
+.cinematography {
+    /* margin: 0 auto; */
+    margin-bottom: 5rem;
+    padding: 3rem;
+    background-color: #2d0d35;
+}
+
+.cinematography p {
+    margin-bottom: 2.5rem;
+}
+
+.cinematography-images {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.cinematography-images img {
+    width: 525px;
+    border-radius: 10px;
+}
+
+.cinematography-images {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 5rem; */
+}
+
+.cinematography-images img {
+    width: 300px;
+    margin-bottom: 1.5rem;
+}
